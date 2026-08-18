@@ -1,9 +1,93 @@
 [
     {
-        "matéria": "matemática",
-        "professor(a)": "Inês",
-        "dia_da_semana": "quarta-feira",
-        "ordem_aula": "3°, 6°",
-        "id": null
+        "matéria": "português",
+        "professor(a)": "Carolina",
+        "dia_da_semana": "segunda",
+        "ordem_aula": 1,
+        "id": 1
+    },
+    {
+        "matéria": "back-end",
+        "professor(a)": "Patrick",
+        "dia_da_semana": "segunda",
+        "ordem_aula": 2,
+        "id": 2
+    },
+    {
+        "matéria": "português",
+        "professor(a)": "Carolina",
+        "dia_da_semana": "segunda",
+        "ordem_aula": 3,
+        "id": 3
+    },
+    {
+        "matéria": "banco-de-dados-",
+        "professor(a)": "Patrick",
+        "dia_da_semana": "segunda",
+        "ordem_aula": 4,
+        "id": 4
+    },
+    {
+        "matéria": "banco-de-dados-",
+        "professor(a)": "patrick",
+        "dia_da_semana": "segunda",
+        "ordem_aula": 5,
+        "id": 5
+    },
+    {
+        "matéria": "Fisíca",
+        "professor(a)": "Eleandro",
+        "dia_da_semana": "terça",
+        "ordem_aula": 1,
+        "id": 6
+    },
+    {
+        "matéria": "Sociologia",
+        "professor(a)": "Priscila",
+        "dia_da_semana": "terça",
+        "ordem_aula": 3,
+        "id": 7
+    },
+    {
+        "matéria": "banco-de-dados",
+        "professor(a)": "Patrick",
+        "dia_da_semana": "terça",
+        "ordem_aula": 4,
+        "id": 8
+    },
+    {
+        "matéria": "Filosofia",
+        "professor(a)": "Ronaldo",
+        "dia_da_semana": "terça",
+        "ordem_aula": 5,
+        "id": 9
+
+    },
+    {"matéria": "back-end",
+    "professor(a)": "Patrick",
+    "dia_da_semana": "terça",
+    "ordem_aula": 6,
+    "id": 10
+},
+    {
+        "matéria": "Inglês",
+        "professor(a)": "Adriele",
+        "dia_da_semana": "quarta",
+        "ordem_aula": 1,
+        "id": 11
+    },
+    {
+        "matéria": "Ed.fisica",
+        "professor(a)": "Samuel",
+        "dia_da_semana": "quarta",
+        "ordem_aula": 3,
+        "id": 12
+    },
+    {
+        "matéria": "Ed.fisíca",
+        "professor(a)": "samuel",
+        "dia_da_semana": "quarta",
+        "ordem_aula": 4,
+        "id": 13
     }
 ]
