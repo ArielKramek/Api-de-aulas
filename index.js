@@ -12,16 +12,25 @@ const port = 3000
 app.use(express.json()) // configura API para usar JSON.
 const fs = require('fs') // importa leitura e escrita de arquivos.
 
+let arquivoID = JSON.parse(fs.readFileSync("id.json", "utf8"))
+let id = arquivoID.id
 
+function atualizarID(){
+    id = id + 1
+    fs.writeFileSync("id.json", JSON.stringify({id:id}), "utf8")
+}
 
 //post
 app.post("/aulas", (req, res) => {
-    const aulas = req.body
+    const aula = req.body
     try {
         // abrir o arquivo
         const bd = JSON.parse(fs.readFileSync("bd.json", "utf8"))
+            atualizarID()
+            aula.id = id
+
         // adicionar o cliente
-        bd.push(aulas)
+        bd.push(aula)
         // salvar o arquivo
         fs.writeFileSync("bd.json", JSON.stringify(bd), "utf8")
         // resposta

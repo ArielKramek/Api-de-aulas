@@ -4,13 +4,6 @@
         "professor(a)": "Inês",
         "dia_da_semana": "quarta-feira",
         "ordem_aula": "3°, 6°",
-        "Aulas_totais_semana": 2
-    },
-    {
-        "matéria": "Ed_fisíca",
-        "professor(a)": "Samuel",
-        "dia_da_semana": "quarta-feira",
-        "ordem_aula":"3°, 4°",
-        "Aulas_totais_semana": 2
+        "id": null
     }
 ]
