@@ -51,6 +51,30 @@ app.get("/aulas", (req, res) => {
     }
 })
 
+
+
+
+app.get("aulas/:dia_da_semana", (req, res) => {
+    const dia = req.params.dia_da_semana
+    try {
+        const aulas = JSON.parse(fs.readFileSync("bd.json", "utf8"))
+        const aulasDia = aulas.filter((aula) => aula.dia_da_semana.toLowerCase() === dia_da_semana.toLowerCase())
+
+        const ordem = aulasDia.sort((a, b) =>a.dia_da_semana - b.dia_da_semana)
+
+        if (aulasDia.length === 0) {
+            return res.status(404).json({erro:"nenhuma aula para este dia"})
+        }
+        res.status(200).json({resposta: aulasDia})
+    }catch (erro) {
+        res.status(500).json({erro:erro.message})
+    }
+})
+
+
+
+
+
 //deletar post
 
 app.delete("/aulas/:id", (req, res) => {
