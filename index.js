@@ -54,20 +54,25 @@ app.get("/aulas", (req, res) => {
 
 
 
-app.get("aulas/:dia_da_semana", (req, res) => {
-    const dia = req.params.dia_da_semana
+app.get("/aulas/:dia", (req, res) => {
+    const dia = req.params.dia
     try {
         const aulas = JSON.parse(fs.readFileSync("bd.json", "utf8"))
-        const aulasDia = aulas.filter((aula) => aula.dia_da_semana.toLowerCase() === dia_da_semana.toLowerCase())
-
-        const ordem = aulasDia.sort((a, b) =>a.dia_da_semana - b.dia_da_semana)
+        
+        // Filtra comparando os dias em minúsculo
+        const aulasDia = aulas.filter((aula) => 
+            aula.dia && aula.dia.toLowerCase() === dia.toLowerCase()
+        );
 
         if (aulasDia.length === 0) {
-            return res.status(404).json({erro:"nenhuma aula para este dia"})
+            return res.status(404).json({ erro: "nenhuma aula para este dia" })
         }
-        res.status(200).json({resposta: aulasDia})
-    }catch (erro) {
-        res.status(500).json({erro:erro.message})
+
+        aulasDia.sort((a, b) => a.ordem_aula - b.ordem_aula)
+
+        res.status(200).json({ resposta: aulasDia })
+    } catch (erro) {
+        res.status(500).json({ erro: erro.message })
     }
 })
 
@@ -77,29 +82,30 @@ app.get("aulas/:dia_da_semana", (req, res) => {
 
 //deletar post
 
+// deletar aula por id
 app.delete("/aulas/:id", (req, res) => {
-    // pegar o id da rota
-    const id = req.params.id
+    // Converte o id da URL para Número
+    const id = Number(req.params.id)
+
     try {
-        // abrir o banco de dados
         const bd = JSON.parse(fs.readFileSync("bd.json", "utf8"))
-        // encontrar o índice do cliente a ser excluido
-        const indiceAulas = bd.findIndex((aulas) => aulas.id == id)
-        // remover o indice da lista
-        if (indiceAulas == -1) {
-            return res.status(404).json({erro: "O cliente não existe"})
-        }
-        bd.splice(indiceAulas, 1)
+
+        const indiceAula = bd.findIndex((aula) => aula.id === id)
+
         
-        // atualizar o arquivo
+        if (indiceAula === -1) {
+            return res.status(404).json({ erro: "Aula não encontrada" })
+        }
+       
+        bd.splice(indiceAula, 1)
+       
         fs.writeFileSync("bd.json", JSON.stringify(bd, null, 2), "utf8")
-        // dar uma resposta para o cliente
-        res.status(200).json({resposta: "Aula excluída com sucesso!"})
-    } catch (error){
-        res.status(500).json({erro: erro.message})
+        
+        res.status(200).json({ resposta: "Aula excluída com sucesso!" })
+    } catch (erro) {
+        res.status(500).json({ erro: erro.message })
     }
 })
-
 
 
 

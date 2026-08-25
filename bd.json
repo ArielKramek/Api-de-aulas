@@ -1,191 +1,191 @@
 [
     {
-        "matéria": "português",
-        "professor(a)": "Carolina",
-        "dia_da_semana": "segunda",
-        "ordem_aula": 1,
-        "id": 1
-    },
-    {
         "matéria": "back-end",
         "professor(a)": "Patrick",
-        "dia_da_semana": "segunda",
+        "dia": "segunda",
         "ordem_aula": 2,
         "id": 2
     },
     {
         "matéria": "português",
         "professor(a)": "Carolina",
-        "dia_da_semana": "segunda",
+        "dia": "segunda",
         "ordem_aula": 3,
         "id": 3
     },
     {
         "matéria": "banco-de-dados-",
         "professor(a)": "Patrick",
-        "dia_da_semana": "segunda",
+        "dia": "segunda",
         "ordem_aula": 4,
         "id": 4
     },
     {
         "matéria": "banco-de-dados-",
         "professor(a)": "patrick",
-        "dia_da_semana": "segunda",
+        "dia": "segunda",
         "ordem_aula": 5,
         "id": 5
     },
     {
         "matéria": "Fisíca",
         "professor(a)": "Eleandro",
-        "dia_da_semana": "terça",
+        "dia": "terca",
         "ordem_aula": 1,
         "id": 6
     },
     {
         "matéria": "Sociologia",
         "professor(a)": "Priscila",
-        "dia_da_semana": "terça",
+        "dia": "terca",
         "ordem_aula": 3,
         "id": 7
     },
     {
         "matéria": "banco-de-dados",
         "professor(a)": "Patrick",
-        "dia_da_semana": "terça",
+        "dia": "terca",
         "ordem_aula": 4,
         "id": 8
     },
     {
         "matéria": "Filosofia",
         "professor(a)": "Ronaldo",
-        "dia_da_semana": "terça",
+        "dia": "terca",
         "ordem_aula": 5,
         "id": 9
     },
     {
         "matéria": "back-end",
         "professor(a)": "Patrick",
-        "dia_da_semana": "terça",
+        "dia": "terca",
         "ordem_aula": 6,
         "id": 10
     },
     {
         "matéria": "Inglês",
         "professor(a)": "Adriele",
-        "dia_da_semana": "quarta",
+        "dia": "quarta",
         "ordem_aula": 1,
         "id": 11
     },
     {
         "matéria": "Ed.fisica",
         "professor(a)": "Samuel",
-        "dia_da_semana": "quarta",
+        "dia": "quarta",
         "ordem_aula": 3,
         "id": 12
     },
     {
         "matéria": "Ed.fisíca",
         "professor(a)": "samuel",
-        "dia_da_semana": "quarta",
+        "dia": "quarta",
         "ordem_aula": 4,
         "id": 13
     },
     {
         "matéria": "Matemática",
         "professor(a)": "Ines",
-        "dia_da_semana": "quarta",
+        "dia": "quarta",
         "ordem_aula": 5,
         "id": 14
     },
     {
         "matéria": "Português",
         "professor(a)": "Carolina",
-        "dia_da_semana": "quarta",
+        "dia": "quarta",
         "ordem_aula": 6,
         "id": 15
     },
     {
         "matéria": "Inovação tecnologica e empreendedorismo",
         "professor(a)": "Rosa",
-        "dia_da_semana": "quinta",
+        "dia": "quinta",
         "ordem_aula": 1,
         "id": 16
     },
     {
         "matéria": "Filosofia",
         "professor(a)": "Ronaldo",
-        "dia_da_semana": "quinta",
+        "dia": "quinta",
         "ordem_aula": 2,
         "id": 17
     },
     {
         "matéria": "Front-end",
         "professor(a)": "Josiane",
-        "dia_da_semana": "quinta",
+        "dia": "quinta",
         "ordem_aula": 3,
         "id": 18
     },
     {
         "matéria": "Inglês",
         "professor(a)": "Adriele",
-        "dia_da_semana": "quinta",
+        "dia": "quinta",
         "ordem_aula": 4,
         "id": 19
     },
     {
         "matéria": "Back-end",
         "professor(a)": "Patrick",
-        "dia_da_semana": "quinta",
+        "dia": "quinta",
         "ordem_aula": 5,
         "id": 20
     },
     {
         "matéria": "Sociologia",
         "professor(a)": "Priscila",
-        "dia_da_semana": "quinta",
+        "dia": "quinta",
         "ordem_aula": 6,
         "id": 21
     },
     {
         "matéria": "Inovação tecnológica e empreendimento",
         "professor(a)": "Rosa",
-        "dia_da_semana": "sexta",
+        "dia": "sexta",
         "ordem_aula": 1,
         "id": 22
     },
     {
         "matéria": "Inovação tecnológica e empreendimento",
         "professor(a)": "Rosa",
-        "dia_da_semana": "sexta",
+        "dia": "sexta",
         "ordem_aula": 2,
         "id": 23
     },
     {
         "matéria": "História",
         "professor(a)": "Helcio",
-        "dia_da_semana": "sexta",
+        "dia": "sexta",
         "ordem_aula": 3,
         "id": 24
     },
     {
         "matéria": "Front-End",
         "professor(a)": "Josiane",
-        "dia_da_semana": "sexta",
+        "dia": "sexta",
         "ordem_aula": 4,
         "id": 25
     },
     {
         "matéria": "História",
         "professor(a)": "Helcio",
-        "dia_da_semana": "sexta",
+        "dia": "sexta",
         "ordem_aula": 5,
         "id": 26
     },
     {
         "matéria": "Front-End",
         "professor(a)": "Josiane",
-        "dia_da_semana": "sexta",
+        "dia": "sexta",
         "ordem_aula": 6,
         "id": 27
+    },
+    {
+        "matéria": "Português",
+        "professor(a)": "Carolina",
+        "dia": "segunda",
+        "ordem_aula": 1,
+        "id": 28
     }
 ]
